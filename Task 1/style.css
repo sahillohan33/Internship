@@ -1,0 +1,189 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color:#3e3e3e;
+    background-image: url('./img/bk.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 70px;
+}
+/* ############  header styling #########  */
+header{
+    position: fixed;
+    top:0;
+    height: 50px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 50px;
+    font-size: 20px;
+    z-index: 2;
+}
+.logo{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: .1em;
+}
+.logo img{
+    width:50px;
+    margin-right: 10px;
+}
+.menu-item{
+    display: flex;
+    gap:30px;
+}
+.menu-item li{
+    list-style: none;
+}
+.menu-item li.active,
+.menu-item li:hover{
+    color:#ff0073;
+}
+/* Hero Section  styling */
+.hero-section{
+    padding-top: 80px;
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+/* left section(Hero Section ) stlying*/
+.left-section{
+    max-width: 50%;
+    padding:0 60px;
+    margin-top: 100px;
+}
+.left-section .title{
+    font-size: 25px;
+    letter-spacing: 0.1em;
+    margin: 45px auto;
+    font-weight: 500;
+}
+.title strong{
+    font-size: 35px;
+    display:block;
+    line-height: 50px;
+}
+.left-desc{
+    max-width: 80%;
+    font-size: 18px;
+    letter-spacing: 0.2em;
+    line-height: 30px;
+    margin-bottom: 48px;
+    text-align: justify;
+}
+button.btn{
+    border:none;
+    outline:none;
+    background: #ffff;
+    color:#ff0073;
+    padding:18px 32px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    border-radius: 30px;
+    box-shadow: 7px 12px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: background 0.5s;
+    font-size: 20px;
+    font-weight: 700;
+}
+button.btn:hover{
+    background: #fdf3f8;
+}
+/* Right Section (Hero Section) Styling */
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding:40px 0 0 40px
+}
+.right-section img{
+    max-width: 450px;
+}
+.color{
+    display: flex;
+    border-top: 3px dotted #fff;
+}
+.color .item-color{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    min-height: 180px;
+    padding-top: 40px;
+}
+.item-color img{
+    position: relative;
+    width: 60px;
+    cursor: pointer;
+    transition: width 0.5s;
+}
+.item-color img:hover{
+    width:120px;
+    
+}
+.item-color .color-selector{
+    position: absolute;
+    top:0;
+    left:50%;
+    background: #ff0073;
+    width:16px;
+    height: 16px;
+    transform: translate((-50%,-50%));
+    border:2px solid #fff;
+    border-radius: 50%;
+}
+.item-color .blue .color-selector{
+    background: #57c7e4;
+}
+
+.item-color .yellow .color-selector{
+    background: #ecdc47;
+}
+.item-color:first-child{
+    transform: translateX(-50%);
+}
+.item-color:last-child{
+    transform: translateX(50%);
+}
+
+.item-color .active .color-selector{
+    width:28px;
+    height: 28px;
+}
+.item-color .active{
+    min-width: 220px;
+}
+.additional-info{
+    background: #fff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    text-align: right;
+    padding:16px 24px;
+    line-height: 28px;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+}
+.additional-info .price{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
