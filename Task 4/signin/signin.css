@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+.form-box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    padding: 20px;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    box-shadow: 2px 2px 2px 2px #aaaa;
+}
+ .form-box h1{
+    background: rgb(36, 36, 66);
+    color:white;
+    font-size: 2rem;
+    font-weight: 400;
+    padding:1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+.form-box label{
+    padding-left:2rem;
+    
+}
+.form-box .fa{
+    color:black;
+}
+.form-box input{
+    margin-bottom: 2rem;
+    padding:1.5px 2px;
+    font-size: 1.4rem;
+    border:none;
+    outline:none;
+    color:#222;
+    border-bottom: 2px solid #aaaa;
+}
+.form-box .btn{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    width:90%;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color:#ffff;
+    padding:4px 3px;
+    border:none;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    border-radius: 10px;
+    background: rgb(36, 36, 66);
+    text-decoration: none;
+}
+.form-box .btn a{
+    text-decoration: none;
+    color:#fff;
+}
+.form-box .btn:hover{
+    background: rgba(4, 246, 169, 0.937);
+    cursor: pointer;
+}
+.form-box p{
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.form-box p a{
+    text-decoration: none;
+    color:rgb(74, 204, 107);
+}
